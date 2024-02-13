@@ -1,0 +1,83 @@
+:root {
+  --background-color: #f7ffe4;
+  --header:#f9e4ff;
+  --header-shadow: #fda5d4;
+  --button-color: #e5e4ff;
+  --button-shadow: #c1c1f8;
+  --button-text: #9f9dfa;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Quicksand';
+}
+
+body {
+  background-color: var(--background-color);
+}
+
+h1 {
+  font-size: 4rem;
+  color: var(--header);
+  text-shadow: -1px -1px 0 var(--header-shadow), 1px -1px 0 var(--header-shadow), -1px 1px 0 var(--header-shadow), 1px 1px 0 var(--header-shadow);
+}
+
+.container, .gif {
+  height: 90svh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hidden {
+  display: none;
+}
+
+#no {
+  transition: transform 0.4s ease-in-out;
+}
+
+#cat {
+  margin-top: 5%;
+  width: 10svw;
+}
+
+#sanrio {
+  width: 40svw;
+}
+
+button {
+  background-color:var(--button-color);
+  border: 2px solid var(--button-shadow);
+  border-radius: 30px;
+  box-shadow: var(--button-shadow) 4px 4px 0 0;
+  color: var(--button-text);
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+button:hover {
+  background-color: #fff;
+}
+
+button:active {
+  box-shadow: var(--button-shadow) 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  button {
+    min-width: 120px;
+    padding: 0 25px;
+  }
+}
